@@ -1,5 +1,14 @@
 Check Array Formation Through Distinct Pieces
 
+/* ta nhan thay moi phan tu trong ar va piece la duy nhat -> khong bi trung
+ -> ta luu cac manh ghep bang phan tu dau tien cua manh ghep do (vi du: 4 = [4, 5, 6])
+ ta duyet qua tat ca vector trong piece, them no va hash map bang cach nhu tren
+ duyet tung ki tu trong arr:
+ - dung 1 vong for de chay het cac ky tu trong moi piece va so sanh voi arr
+ - neu khac: return false luon
+ - nhan thay truong hop false duy nhat: khi do thu tu cac piece bi sai trong arr
+ */
+
 bool canFormArray(vector<int>& arr, vector<vector<int>>& pieces) {
     // tao hash map luu ky tu dau tien va vector cua ky tu dau tien do
     unordered_map<int, vector<int>> mp;
